@@ -36,5 +36,5 @@ while true; do
 
   git add README.md
   git commit -m "$msg"
-  git push
+  git push origin dev
 done
