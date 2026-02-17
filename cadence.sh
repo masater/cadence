@@ -25,7 +25,6 @@ msgs=(
 )
 
 while true; do
-  sleep $(( RANDOM % 7201 + 7200 ))
   msg="${msgs[$(( RANDOM % ${#msgs[@]} ))]}"
 
   if grep -q 'valuable ' README.md; then
@@ -37,4 +36,5 @@ while true; do
   git add README.md
   git commit -m "$msg"
   git push origin dev
+  sleep $(( RANDOM % 10801 + 3600 ))
 done
