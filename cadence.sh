@@ -36,5 +36,6 @@ while true; do
   git add README.md
   git commit -m "$msg"
   git push origin dev
+  git checkout main && git merge dev && git push origin main && git checkout dev
   sleep $(( RANDOM % 10801 + 3600 ))
 done
