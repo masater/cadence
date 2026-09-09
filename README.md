@@ -1,2 +1,2 @@
 # cadence
-visible ≠ valuable 
+visible ≠ valuable
